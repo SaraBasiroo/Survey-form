@@ -6,6 +6,8 @@ import java.awt.*;
 public class informationPage {
 
     public void create(JFrame frame) {
+        Font font = new Font("Arial", Font.PLAIN, 24);
+
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
@@ -17,12 +19,14 @@ public class informationPage {
         JLabel nameLabel = new JLabel("اسم");
         nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
         nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        nameLabel.setFont(font);
 
         JTextField nameField = new JTextField(15);
         nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Age Label and Text Field
         JLabel ageLabel = new JLabel("سن");
+        ageLabel.setFont(font);
         ageLabel.setHorizontalAlignment(SwingConstants.CENTER);
         ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
@@ -31,6 +35,7 @@ public class informationPage {
 
         // Email Label and Text Field
         JLabel emailLabel = new JLabel("ایمیل");
+        emailLabel.setFont(font);
         emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
         emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         JTextField emailField = new JTextField(15);
@@ -40,15 +45,20 @@ public class informationPage {
         JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
         levelLabel.setHorizontalAlignment(SwingConstants.CENTER);
         levelLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        levelLabel.setFont(font);
 
         JRadioButton level1 = new JRadioButton("مبتدی");
         level1.setBounds(10, 160, 100, 20);
+        level1.setFont(font);
         JRadioButton level2 = new JRadioButton("متوسط");
         level2.setBounds(100, 160, 100, 20);
+        level2.setFont(font);
         JRadioButton level3 = new JRadioButton("پیشرفته");
         level3.setBounds(190, 160, 100, 20);
+        level3.setFont(font);
         JRadioButton level4 = new JRadioButton("بدون آشنایی");
         level4.setBounds(280, 160, 150, 20);
+        level4.setFont(font);
         level1.setAlignmentX(Component.CENTER_ALIGNMENT);
         level2.setAlignmentX(Component.CENTER_ALIGNMENT);
         level3.setAlignmentX(Component.CENTER_ALIGNMENT);
@@ -63,6 +73,7 @@ public class informationPage {
 
         // Next Page Button
         JButton nextButton = new JButton("صفحه بعد");
+        nextButton.setFont(font);
         nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
