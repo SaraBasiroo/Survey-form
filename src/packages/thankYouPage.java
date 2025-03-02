@@ -6,6 +6,7 @@ import java.awt.*;
 public class thankYouPage {
 
     public void create(JFrame frame) {
+        Font font = new Font("Arial", Font.PLAIN, 24);
 
         // Create and configure the panel
         JPanel panel = new JPanel();
@@ -19,6 +20,7 @@ public class thankYouPage {
         thankYouLabel.setVerticalAlignment(SwingConstants.CENTER);
         thankYouLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
         thankYouLabel.setAlignmentY(Component.CENTER_ALIGNMENT);
+        thankYouLabel.setFont(font);
 
         // Add components to the panel
         panel.add(thankYouLabel, BorderLayout.CENTER);
