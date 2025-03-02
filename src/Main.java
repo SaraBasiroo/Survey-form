@@ -6,6 +6,8 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
+        Font font = new Font("Arial", Font.PLAIN, 24);
+
         // Create and configure the main frame
         JFrame frame = new JFrame("فرم نظرسنجی");
         frame.setSize(600, 600);
@@ -22,12 +24,14 @@ public class Main {
         JLabel title = new JLabel("فرم نظرسنجی");
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setBounds(10, 10, 100, 20);
+        title.setFont(font);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
         startButton.setHorizontalAlignment(JLabel.CENTER);
         startButton.setBounds(10, 40, 100, 20);
         startButton.setHorizontalAlignment(JButton.CENTER);
+        startButton.setFont(font);
 
         // Add components to the panel
         panel.add(title);
