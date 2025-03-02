@@ -6,7 +6,7 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        Font font = new Font("Arial", Font.PLAIN, 24);
+        Font font = new Font("Arial", Font.PLAIN, 20);
 
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey form");

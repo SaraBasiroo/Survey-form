@@ -6,7 +6,7 @@ import java.awt.*;
 public class thankYouPage {
 
     public void create(JFrame frame) {
-        Font font = new Font("Arial", Font.PLAIN, 24);
+        Font font = new Font("Arial", Font.PLAIN, 15);
 
         // Create and configure the panel
         JPanel panel = new JPanel();
