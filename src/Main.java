@@ -17,6 +17,7 @@ public class Main {
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.setBounds(0, 0, 600, 600);
+        panel.setBackground(Color.YELLOW);
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
