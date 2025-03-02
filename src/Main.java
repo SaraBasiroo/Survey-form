@@ -21,11 +21,14 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("فرم نظرسنجی");
+        title.setHorizontalAlignment(JLabel.CENTER);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("شروع!");
+        startButton.setHorizontalAlignment(JLabel.CENTER);
         startButton.setBounds(10, 40, 100, 20);
+        startButton.setHorizontalAlignment(JButton.CENTER);
 
         // Add components to the panel
         panel.add(title);
