@@ -1,68 +1,45 @@
 package packages;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class informationPage {
 
     public void create(JFrame frame) {
-        Font font = new Font("Arial", Font.PLAIN, 24);
-
         // Create the main panel
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
-        panel.setBackground(Color.YELLOW);
-        panel.add(Box.createRigidArea(new Dimension(10, 20)));
+        panel.setLayout(null);
 
         // Name Label and Text Field
-        JLabel nameLabel = new JLabel("اسم");
-        nameLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        nameLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        nameLabel.setFont(font);
-
+        JLabel nameLabel = new JLabel("Name");
+        nameLabel.setBounds(10, 10, 100, 20);
         JTextField nameField = new JTextField(15);
-        nameField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        nameField.setBounds(50, 10, 100, 20);
 
         // Age Label and Text Field
-        JLabel ageLabel = new JLabel("سن");
-        ageLabel.setFont(font);
-        ageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        ageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-
+        JLabel ageLabel = new JLabel("Age");
+        ageLabel.setBounds(10, 50, 100, 20);
         JTextField ageField = new JTextField(15);
-        ageField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        ageField.setBounds(50, 50, 100, 20);
 
         // Email Label and Text Field
-        JLabel emailLabel = new JLabel("ایمیل");
-        emailLabel.setFont(font);
-        emailLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        emailLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JLabel emailLabel = new JLabel("Email");
+        emailLabel.setBounds(10, 90, 100, 20);
         JTextField emailField = new JTextField(15);
-        emailField.setAlignmentX(Component.CENTER_ALIGNMENT);
+        emailField.setBounds(50, 90, 100, 20);
 
         // Software Familiarity Level
-        JLabel levelLabel = new JLabel("سطح آشنایی با نرم افزارهای مشابه");
-        levelLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        levelLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-        levelLabel.setFont(font);
+        JLabel levelLabel = new JLabel("Familiarity with similar software");
+        levelLabel.setBounds(10, 130, 250, 20);
 
-        JRadioButton level1 = new JRadioButton("مبتدی");
+        JRadioButton level1 = new JRadioButton("Beginner");
         level1.setBounds(10, 160, 100, 20);
-        level1.setFont(font);
-        JRadioButton level2 = new JRadioButton("متوسط");
+        JRadioButton level2 = new JRadioButton("Intermediate");
         level2.setBounds(100, 160, 100, 20);
-        level2.setFont(font);
-        JRadioButton level3 = new JRadioButton("پیشرفته");
+        JRadioButton level3 = new JRadioButton("Advanced");
         level3.setBounds(190, 160, 100, 20);
-        level3.setFont(font);
-        JRadioButton level4 = new JRadioButton("بدون آشنایی");
+        JRadioButton level4 = new JRadioButton("Without Familiarity");
         level4.setBounds(280, 160, 150, 20);
-        level4.setFont(font);
-        level1.setAlignmentX(Component.CENTER_ALIGNMENT);
-        level2.setAlignmentX(Component.CENTER_ALIGNMENT);
-        level3.setAlignmentX(Component.CENTER_ALIGNMENT);
-        level4.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         // Group the radio buttons
         ButtonGroup group = new ButtonGroup();
@@ -72,9 +49,8 @@ public class informationPage {
         group.add(level4);
 
         // Next Page Button
-        JButton nextButton = new JButton("صفحه بعد");
-        nextButton.setFont(font);
-        nextButton.setAlignmentX(Component.CENTER_ALIGNMENT);
+        JButton nextButton = new JButton("Next Page");
+        nextButton.setBounds(10, 200, 100, 20);
         nextButton.addActionListener(e -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
